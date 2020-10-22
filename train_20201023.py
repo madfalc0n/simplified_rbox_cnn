@@ -60,7 +60,7 @@ flags.DEFINE_integer('save_interval_secs', 3600,
 flags.DEFINE_integer('log_every_n_steps', 1,
                      'The frequency, in terms of global steps, that the loss and global step are logged.')
 FLAGS = flags.FLAGS
-
+train_history = 'train_history/'
 
 def get_configs_from_pipeline_file():
     """Reads training configuration from a pipeline_pb2.TrainEvalPipelineConfig.
