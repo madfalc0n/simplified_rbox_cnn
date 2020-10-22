@@ -49,7 +49,7 @@ from protos import train_pb2
 tf.logging.set_verbosity(tf.logging.INFO)
 
 flags = tf.app.flags
-flags.DEFINE_string('train_dir', 'train_history',
+flags.DEFINE_string('train_dir', 'train_history/',
                     'Directory to save the checkpoints and training summaries.')
 
 flags.DEFINE_string('pipeline_config_path', '',
